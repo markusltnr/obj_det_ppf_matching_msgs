@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   sensor_msgs
   std_msgs
+  table_extractor
 )
 
 ## System dependencies are found with CMake's conventions
@@ -50,18 +51,19 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
-   DetectedObject.msg
-   Match.msg
+   CandidateObject.msg
+   ObjectMatch.msg
    Object.msg
-   ObjectState.msg
-   Plane.msg
-   Table.msg
+   ObjectStateClass.msg
+#   Plane.msg
+#   Table.msg
  )
 
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
    det_and_compare_obj.srv
+   extract_permanent_objects.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -77,6 +79,7 @@ add_message_files(
    geometry_msgs   
    sensor_msgs   
    std_msgs
+   table_extractor
  )
 
 ################################################
@@ -109,7 +112,7 @@ add_message_files(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS include
+#  INCLUDE_DIRS include
 #  LIBRARIES obj_det_ppf_matching_msgs
 #  CATKIN_DEPENDS geometry_msgs message_generation sensor_msgs std_msgs
 #  DEPENDS system_lib
@@ -122,7 +125,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
- include
+ #include
   ${catkin_INCLUDE_DIRS}
 )
 

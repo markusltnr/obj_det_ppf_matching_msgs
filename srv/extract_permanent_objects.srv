@@ -1,0 +1,3 @@
+int32[] table_numbers #if it is empty all available tables will be checked for objects
+--- 
+int32 nr_det_obj

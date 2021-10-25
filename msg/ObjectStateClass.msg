@@ -1,0 +1,5 @@
+uint8 NEW=0
+uint8 REMOVED=1
+uint8 DISPLACED=2
+uint8 STATIC=3
+uint8 UNKNOWN=4
