@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   table_extractor
+  actionlib_msgs
 )
 
 ## System dependencies are found with CMake's conventions
