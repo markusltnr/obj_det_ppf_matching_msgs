@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   sensor_msgs
   std_msgs
-  table_extractor
+  edith_msgs
   actionlib_msgs
 )
 
@@ -80,7 +80,7 @@ add_message_files(
    geometry_msgs   
    sensor_msgs   
    std_msgs
-   table_extractor
+   edith_msgs
  )
 
 ################################################
